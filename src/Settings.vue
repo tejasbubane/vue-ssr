@@ -1,5 +1,5 @@
 <template>
-  <div id="settings">
+  <div class="settings">
     This is Settings
   </div>
 </template>

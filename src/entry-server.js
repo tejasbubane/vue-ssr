@@ -6,8 +6,10 @@ export default context => {
   // we will be returning a Promise so that the server can wait until
   // everything is ready before rendering.
   return new Promise((resolve, reject) => {
+    // Create new app instance for every request
     const { app, router } = createApp();
 
+    // log the path
     console.log(context.url);
 
     // set server-side router's location

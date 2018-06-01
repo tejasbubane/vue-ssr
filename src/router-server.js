@@ -23,8 +23,7 @@ const router = new Router({
       path: "/settings",
       name: "settings",
       component: Settings
-    },
-    { path: "*", redirect: "/" }
+    }
   ]
 });
 
