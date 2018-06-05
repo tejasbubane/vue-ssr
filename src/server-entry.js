@@ -1,5 +1,5 @@
 // entry-server.js
-import { createApp } from "./app";
+import createApp from "./server-app";
 
 export default context => {
   // since there could potentially be asynchronous route hooks or components,

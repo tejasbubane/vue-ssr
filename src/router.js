@@ -1,9 +1,9 @@
 // router.js
 import Vue from "vue";
 import Router from "vue-router";
-import Dashboard from "./Dashboard";
-import Settings from "./Settings";
-import App from "./App.vue";
+import Dashboard from "./components/Dashboard";
+import Settings from "./components/Settings";
+import App from "./components/App";
 
 Vue.use(Router);
 

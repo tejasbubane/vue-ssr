@@ -1,4 +1,6 @@
-import { createApp } from "./app";
+// Client-side bundle for production use
+// along with SSR
+import createApp from "./server-app";
 
 const app = createApp().app;
 

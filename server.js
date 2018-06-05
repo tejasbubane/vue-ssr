@@ -2,7 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const code = fs.readFileSync(
-  path.join(__dirname, "./build/dist/build-server.js"),
+  path.join(__dirname, "./build/dist/server-build.js"),
   "utf8"
 );
 const renderer = require("vue-server-renderer").createBundleRenderer(code);

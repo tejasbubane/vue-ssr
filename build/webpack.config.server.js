@@ -6,7 +6,7 @@ const path = require("path");
 
 module.exports = merge(baseConfig, {
   // Point entry to your app's server entry file
-  entry: "./src/entry-server.js",
+  entry: "./src/server-entry.js",
 
   // This allows webpack to handle dynamic imports in a Node-appropriate
   // fashion, and also tells `vue-loader` to emit server-oriented code when
@@ -20,7 +20,7 @@ module.exports = merge(baseConfig, {
   output: {
     libraryTarget: "commonjs2",
     path: path.resolve(__dirname, "./dist"),
-    filename: "build-server.js"
+    filename: "server-build.js"
   },
 
   // https://webpack.js.org/configuration/externals/#function

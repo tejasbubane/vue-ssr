@@ -5,7 +5,7 @@ const baseConfig = require("./webpack.config");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(baseConfig, {
-  entry: "./src/entry-client.js",
+  entry: "./src/client-entry.js",
   devtool: "#source-map",
   output: {
     path: path.resolve(__dirname, "./dist"),
