@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(baseConfig, {
   entry: "./src/client-entry.js",
+  mode: "production",
   devtool: "#source-map",
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -16,20 +17,6 @@ module.exports = merge(baseConfig, {
     new HtmlWebpackPlugin({
       title: "VueJS SSR",
       template: "index.template.html"
-    }),
-    new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: true
     })
   ]
 });

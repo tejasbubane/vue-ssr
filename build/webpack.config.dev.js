@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(baseConfig, {
   entry: "./src/client-entry.js",
+  mode: "development",
   devServer: {
     historyApiFallback: true,
     noInfo: true,
